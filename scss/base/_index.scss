@@ -1,6 +1,5 @@
 /* ============================================= */
-/* Sub-Folder Imports */
+/* Base Imports */
 /* ============================================= */
-@import 'utilities/index';
-@import 'base/index';
-@import 'components/index';
+@import 'normalize';
+@import 'typography';
