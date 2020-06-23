@@ -4,6 +4,14 @@
 
 .form {
 	flex-basis: 100%;
+	.hidden {
+		position: absolute;
+		left: -10000px;
+		top: auto;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
 }
 
 .input {
@@ -12,14 +20,5 @@
 	margin: 10px auto 0;
 	border: none;
 	padding: 10px;
-	border-bottom: 5px solid #58e1c1;
-}
-
-.hidden {
-	position: absolute;
-	left: -10000px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
+	border-bottom: 5px solid $color-primary-accent;
 }

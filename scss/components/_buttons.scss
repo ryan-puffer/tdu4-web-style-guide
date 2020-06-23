@@ -5,29 +5,47 @@
 .btn {
 	margin-top: 15px;
 	width: 100%;
-	color: #fff;
+	color: $white;
 	border: none;
 	padding: 10px 0;
 	text-transform: uppercase;
 	border-radius: 5px;
+	@media #{$brk-large} {
+		padding: 10px 30px;
+	}
 }
 
 .default {
-	background-color: #51ddfc;
+	background-color: $color-secondary-accent;
+	&:hover {
+		background-color: lighten($color: $color-secondary-accent, $amount: 10%);
+	}
 }
 
 .error {
 	background-color: #e4757a;
+	&:hover {
+		background-color: lighten($color: #e4757a, $amount: 10%);
+	}
 }
 
 .info {
 	background-color: #927bc1;
+	&:hover {
+		background-color: lighten($color: #927bc1, $amount: 10%);
+	}
 }
 
 .success {
 	background-color: #63cc82;
+	&:hover {
+		background-color: lighten($color: #63cc82, $amount: 10%);
+	}
 }
 
 .warning {
 	background-color: #fd7856;
+	&:hover {
+		background-color: lighten($color: #fd7856, $amount: 10%);
+	}
 }
